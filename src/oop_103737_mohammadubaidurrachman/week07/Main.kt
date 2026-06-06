@@ -23,5 +23,6 @@ fun main() {
 
     println(reg1)
 
+
     println("Sama? ${reg1 == reg2}")
 }
