@@ -31,4 +31,16 @@ fun main() {
     println("Multiplied: $multiplied")
 
     println("Formatted: $asStrings")
+
+    println("\n=== HOF: SORT ===")
+
+    val descending =
+        multiplied.sortedByDescending {
+            it
+        }
+
+    descending.forEach {
+
+        println("Value: $it")
+    }
 }
