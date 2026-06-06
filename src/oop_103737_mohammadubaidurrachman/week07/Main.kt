@@ -81,4 +81,31 @@ fun main() {
     println(
         "Starter Weapon: ${starterWeapon.item}"
     )
+
+    val upgradedSword =
+        starterWeapon.item.copy(
+            damage = 25
+        )
+
+    println("\n=== TEST EVENT SYSTEM ===")
+
+    processEvent(BattleState.SafeZone)
+
+    processEvent(
+        BattleState.MonsterEncounter(
+            "Goblin Nakal"
+        )
+    )
+
+    processEvent(
+        BattleState.LootDropped(
+            upgradedSword
+        )
+    )
+
+    processEvent(
+        BattleState.GameOver(
+            "Terkena jebakan racun"
+        )
+    )
 }
