@@ -123,4 +123,5 @@ fun main() {
     println(
         "Status dari Java: $javaResponse (Length: $statusLength)"
     )
+    runMockUnitTest()
 }
