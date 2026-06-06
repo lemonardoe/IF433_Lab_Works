@@ -106,6 +106,7 @@ fun main() {
             println(it)
         }
 
+
         println("\n=== TRADED PAIRS ===")
 
         println(uniquePairs)
