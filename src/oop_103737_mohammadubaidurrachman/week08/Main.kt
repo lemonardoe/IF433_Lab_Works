@@ -69,5 +69,6 @@ fun main() {
         someObject as? String
             ?: "Unknown String"
 
+
     println("Hasil cast + fallback: $safeString")
 }
