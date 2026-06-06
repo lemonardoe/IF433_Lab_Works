@@ -60,4 +60,8 @@ fun main() {
         closedTrades.filter {
             it.roe > 0
         }
+    val losingTrades =
+        closedTrades.filter {
+            it.roe <= 0
+        }
 }
